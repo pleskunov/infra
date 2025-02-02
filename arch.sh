@@ -55,7 +55,7 @@ core_packages=("base" "base-devel" "linux" "linux-lts" "linux-firmware" "grub" \
 
 daemons="chronyd NetworkManager"
 install_second_stage=true
-post_install_script_url="https://raw.githubusercontent.com/pleskunov/infra/refs/heads/main/post-install.sh"
+post_install_script_url="https://raw.githubusercontent.com/pleskunov/infra/refs/heads/main/arch-post-install.sh"
 test_mode=true
 cryptroot_device="cryptroot"
 
