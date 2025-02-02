@@ -214,7 +214,7 @@ arch-chroot /mnt passwd "$username"
 if "${install_second_stage}"; then
   echo "Downloading the post-install script..."
   arch-chroot /mnt curl --proto '=https' --tlsv1.2 -o /root/post-install.sh -sSf "$post_install_script_url"
-  chmod +x /root/post-install.sh
+  chmod +x /mnt/root/post-install.sh
 fi
 
 if ! "${test_mode}"; then
