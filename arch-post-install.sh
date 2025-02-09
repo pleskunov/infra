@@ -57,8 +57,9 @@ else
 fi
 
 echo -n "Installing the packages..."
+echo ""
 if pacman -Sy --needed $(<"$package_list"); then
-  echo -e " [${GREEN}OK${RESET}]"
+  echo -e " [${GREEN}DONE${RESET}]"
 else
   echo -e " [${RED}FAIL${RESET}]"
   exit 1
